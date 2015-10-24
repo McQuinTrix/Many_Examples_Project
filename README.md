@@ -31,10 +31,13 @@ Detect if browser supports SVG or not then display
 <script>
 
 Modernizr.load({
-  //This will test if 'svg' and 'inlinesvg' are valid in browser or not.
+
+  /*This will test if 'svg' and 'inlinesvg' are valid in browser or not.*/
   test: Modernizr.svg && Modernizr.inlinesvg,
-  //This will include 'd3.v3.min.js' and 'script.js' if the test above passed.
+  
+  /*This will include 'd3.v3.min.js' and 'script.js' if the test above passed.*/
   yep: ['js/d3.v3.min.js','js/script.js']
+  
 });
 
 </script>
