@@ -8,6 +8,51 @@ Inspired By: https://www.youtube.com/watch?v=FKTxC9pl-WM
 
 ##JavaScript
 
+###Topic: Primitive v/s Reference Values
+
+Objects pass values by reference vs Primitives (```undefined, Null, Boolean, Number, and String```) pass values by copying.
+
+Pass values by copy example:
+
+```
+  var a = "String";
+  var b = a;
+  
+  /*Modifying values of 'a'*/
+  
+  a = "anotherString";
+  
+  /*Checking b's value*/
+  
+  console.log(b); /*will give out 'String', because 'b' copied the value of 'a' and stored seperately*/
+```
+
+Pass values by reference example:
+
+``` 
+  var obj1 = { "id" : "goku_vegeta" };
+  var obj2 = obj1;
+  
+  /* Modifying values of obj1.id */
+  
+  obj1.id = "gohan_trunks";
+  
+  /*Checking values of obj2 */
+  
+  console.log(obj2);
+  
+  /*Will print : Object { "id" : "gohan_trunks"} */
+  
+  /*Also adding/deleting properties will be reflected into obj2, because they both are pointing to the same object in the memory*/
+  
+  obj1.foo = "bar";
+  
+  console.log(obj2);
+  
+  /*Will print : Object { "id" : "gohan_trunks", "foo": "bar"} */
+  
+```
+
 ###Topic: IIFE
 
 ###Topic: Closures
