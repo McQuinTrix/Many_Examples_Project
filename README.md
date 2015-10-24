@@ -19,3 +19,21 @@ Inspired By: https://www.youtube.com/watch?v=FKTxC9pl-WM
 ###Topic: Weird Parts Of JavaScript | What to avoid!
 
 ###Topic: Inbuilt Helpful Functions
+
+##D3.js
+
+###Modernizr tool to detect if browser supports SVG or not then display
+
+```
+<script src="js/modernizr.js"></script>
+<script>
+
+Modernizr.load({
+  //This will test if 'svg' and 'inlinesvg' are valid in browser or not.
+  test: Modernizr.svg && Modernizr.inlinesvg,
+  //This will include 'd3.v3.min.js' and 'script.js' if the test above passed.
+  yep: ['js/d3.v3.min.js','js/script.js']
+});
+
+</script>
+```
