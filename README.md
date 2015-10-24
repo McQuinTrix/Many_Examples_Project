@@ -22,7 +22,9 @@ Inspired By: https://www.youtube.com/watch?v=FKTxC9pl-WM
 
 ##D3.js
 
-###Modernizr tool to detect if browser supports SVG or not then display
+###Using Modernizr.
+
+Detect if browser supports SVG or not then display
 
 ```
 <script src="js/modernizr.js"></script>
