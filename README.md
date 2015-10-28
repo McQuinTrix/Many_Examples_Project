@@ -73,7 +73,9 @@ Pass values by reference example:
 
 #### Date Inherited Methods
 ```.valueOf() ``` gives out milliseconds.
+
 ```.toString() ``` gives out this format ```Wed Oct 28 2015 13:52:21 GMT-0700 (PDT)```(In Chrome).
+
 ```.toLocaleString() ``` gives out this format ```10/28/2015, 1:52:21 PM```(In Chrome).
 
 ##D3.js
