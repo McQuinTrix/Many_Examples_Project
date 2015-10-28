@@ -78,6 +78,8 @@ Pass values by reference example:
 
 ```.toLocaleString() ``` gives out this format ```10/28/2015, 1:52:21 PM```(In Chrome).
 
+```.toString() ``` & ```.toLocaleString() ``` have different formats for different browsers so it has to be just used for debugging purposes.
+
 ##D3.js
 
 ###Using Modernizr.
