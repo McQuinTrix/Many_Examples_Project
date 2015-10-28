@@ -65,6 +65,12 @@ Pass values by reference example:
 
 ###Topic: Inbuilt Helpful Functions
 
+###Topic: Dates
+
+```Date.now() ``` was introduced in ES5 which will return millisecond representation of time right now. The browsers which have not yet implemented ```Date.now()``` can use it in following way:
+
+```var nowMs = +new Date()```
+
 ##D3.js
 
 ###Using Modernizr.
