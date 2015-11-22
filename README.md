@@ -33,27 +33,31 @@ Pass values by reference example:
   var obj1 = { "id" : "goku_vegeta" };
   var obj2 = obj1;
 ```
+Both ```obj1``` and ```obj2``` point to same memory.
+
 Modifying values of ```obj1.id``` reflects changes on ```obj2``` as ```obj2``` has reference of ```obj1```.
 
-Both ```obj1``` and ```obj2``` point to same memory.
 ``` 
   obj1.id = "gohan_trunks";
-  
-  /*Checking values of obj2 */
-  
-  console.log(obj2);
-  
-  /*Will print : Object { "id" : "gohan_trunks"} */
-  
-  /*Also adding/deleting properties will be reflected into obj2, because they both are pointing to the same object in the memory*/
-  
-  obj1.foo = "bar";
-  
-  console.log(obj2);
-  
-  /*Will print : Object { "id" : "gohan_trunks", "foo": "bar"} */
-  
 ```
+
+Checking values of obj2
+
+```
+  console.log(obj2);
+```
+
+Will print : ```Object { "id" : "gohan_trunks"} ```
+  
+Also adding/deleting properties will be reflected into obj2, because they both are pointing to the same object in the memory
+
+```
+  obj1.foo = "bar";
+  console.log(obj2);
+```
+
+Will print : ```Object { "id" : "gohan_trunks", "foo": "bar"}```
+
 ###Topic: Event Delegation
 
 This is a important topic for optimizing speed.
