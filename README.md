@@ -52,6 +52,11 @@ Pass values by reference example:
   /*Will print : Object { "id" : "gohan_trunks", "foo": "bar"} */
   
 ```
+###Topic: Event Delegation
+
+This is a important topic for optimizing speed.
+
+https://davidwalsh.name/event-delegate
 
 ###Topic: IIFE
 
