@@ -32,9 +32,11 @@ Pass values by reference example:
 ``` 
   var obj1 = { "id" : "goku_vegeta" };
   var obj2 = obj1;
-  
-  /* Modifying values of obj1.id */
-  
+```
+Modifying values of ```obj1.id``` reflects changes on ```obj2``` as ```obj2``` has reference of ```obj1```.
+
+Both ```obj1``` and ```obj2``` point to same memory.
+``` 
   obj1.id = "gohan_trunks";
   
   /*Checking values of obj2 */
